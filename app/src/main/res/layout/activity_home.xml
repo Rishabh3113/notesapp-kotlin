@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        app:tabMode="fixed"
+        android:id="@+id/tab"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="@dimen/_2sdp"
+        app:tabIndicatorColor="@color/black"
+        app:tabTextColor="@color/black"
+        android:background="@color/bright"
+        android:elevation="@dimen/_80sdp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes section"
+            android:id="@+id/notes"
+
+            android:icon="@drawable/baseline_note_24">
+
+        </com.google.android.material.tabs.TabItem>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:id="@+id/profile"
+            android:icon="@drawable/baseline_account_circle_24">
+
+        </com.google.android.material.tabs.TabItem>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+</RelativeLayout>

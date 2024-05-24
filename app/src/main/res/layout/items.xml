@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bright"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:elevation="@dimen/_15sdp"
+    android:orientation="vertical"
+    android:id="@+id/card"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="@dimen/_160sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bright"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:maxLines="@integer/material_motion_duration_medium_2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Heading"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:id="@+id/heading"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            app:boxBackgroundMode="outline"
+            android:layout_height="@dimen/_80sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:backgroundTint="@color/bright"
+                android:id="@+id/description"
+                android:ellipsize="end"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+       <ImageButton
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="match_parent"
+           android:src="@drawable/baseline_content_copy_24"
+           android:backgroundTint="@color/bright"
+           android:layout_margin="@dimen/_5sdp"
+           android:id="@+id/copy"/>
+       <ImageButton
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="match_parent"
+           android:src="@drawable/baseline_delete_24"
+           android:backgroundTint="@color/bright"
+           android:layout_margin="@dimen/_5sdp"
+           android:id="@+id/delete"/>
+
+
+
+   </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
